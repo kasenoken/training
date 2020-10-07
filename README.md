@@ -1,3 +1,4 @@
 # training
-Funções
+Funções (First.java)
+
 Condições(Calculate.java)
