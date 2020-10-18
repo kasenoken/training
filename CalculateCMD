@@ -1,0 +1,43 @@
+public class Calculadora {
+    // A calculadora só funciona indicando os comandos(somar, subtrair, dividir, multiplicar) via prompt de comando.
+    //Exemplo:
+    //Javac Calculadora.java
+    //java Calculadora somar 2 3
+
+    // The calculator only worked by indicating the commands (somar = adition, subtrair = subtraction, dividir = division, multiplicar = multiplication) at the cmd.
+    //Example:
+    //Javac Calculadora.java
+    //java Calculadora somar 2 3
+
+    public static void main(String[] args) {
+        int x = Integer.parseInt(args[1]);
+        int y = Integer.parseInt(args[2]);
+
+        if (args[0].equals("somar")){
+            somar(x, y);
+    }
+        else if (args[0].equals("subtrair")){
+            subtrair(x, y);
+        }
+        else if (args[0].equals("dividir")){
+            dividir(x, y);
+        }
+        else if (args[0].equals("multiplicar")){
+            multiplicar(x, y);
+        }
+        else System.out.println("Instrucao digitada errada!");
+    }
+
+    static void somar(int x, int y){
+        System.out.println(x + y);
+    }
+    static void subtrair(int x, int y){
+        System.out.println(x - y);
+    }
+    static void dividir(int x, int y){
+        System.out.println(x / y);
+    }
+    static void multiplicar(int x, int y){
+        System.out.println(x * y);
+    }
+}
